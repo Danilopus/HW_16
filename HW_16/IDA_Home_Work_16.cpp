@@ -46,7 +46,7 @@ int Transforming_number_into_array()
 	std::cout << "\nEnter number to transform [6-digit]: ";
 	int Number_to_transform = Get_Int_Positive();
 	int Destination_Array[6] = {};
-	if (Number_to_transform < 1e5 && Number_to_transform >= 1e6) 
+	if (Number_to_transform < 1e5 || Number_to_transform >= 1e6) 
 	{
 		std::cout << "\nError. Exiting..."; 
 		return 0;
